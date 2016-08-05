@@ -2,7 +2,7 @@ from PIL import Image
 import numpy
 
 #Escala de Grises : Promedio
-#Negativo : 
+#Negativo : 255- color
 
 def convertirImagenAArchivo(nombreImagen, nombreDestino):
     imagen = Image.open(nombreImagen)
