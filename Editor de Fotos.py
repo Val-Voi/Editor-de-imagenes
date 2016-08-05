@@ -1,7 +1,7 @@
 from PIL import Image
 import numpy
 
-
+##############
 #Escala de Grises : Promedio
 #Negativo : 255- color
 
