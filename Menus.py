@@ -5,29 +5,29 @@ from Editor_de_Fotos import *
 
 
 
-print 'Instrucciones:'
-print '-Para cargar una imagen,escriba su nombre incluyendo su extension'
-print ' Ejemplo: imagen.png'
-print '-Para salir dejar en blanco'
+print ('Instrucciones:')
+print ('-Para cargar una imagen,escriba su nombre incluyendo su extension')
+print (' Ejemplo: imagen.png')
+print ('-Para salir dejar en blanco')
 
 
 while True:
-    imagen = raw_input('Nombre del archivo: ')
+    imagen = input('Nombre del archivo: ')
     if imagen == '':
         break
     if imagen != '':
-        print 'Lista de filtros disponibles:'
-        print '1.- Blanco y Neegro'
-        print '2.- Negativo'
-        print '3.- Glitch'
-        print '4.- Espejo Horizontal'
-        print '5.- Espejo Vertical'
-        print '6.- Bandera'
-        print '7.- Rotacion 90 Grados (Sentido Horario)'
-        print '8.- Rotacion 90 Grados (Sentido Antihorario'
-        print '10.- Cargar otra imagen'
+        print ('Lista de filtros disponibles:')
+        print ('1.- Blanco y Neegro')
+        print ('2.- Negativo')
+        print ('3.- Glitch')
+        print ('4.- Espejo Horizontal')
+        print ('5.- Espejo Vertical')
+        print ('6.- Bandera')
+        print ('7.- Rotacion 90 Grados (Sentido Horario)')
+        print ('8.- Rotacion 90 Grados (Sentido Antihorario')
+        print ('10.- Cargar otra imagen')
 
-        opcion = raw_input("Elija una de las opciones anteriores: ")
+        opcion = input("Elija una de las opciones anteriores: ")
         while opcion != '10':
             if opcion == "1":
                 BlackAndWhite(imagen)
@@ -45,4 +45,4 @@ while True:
                 noventagrados(imagen)
             if opcion == '8':
                 menosnoventagrados(imagen)
-            opcion = raw_input("Elija una de las opciones anteriores: ")
+            opcion = input("Elija una de las opciones anteriores: ")
